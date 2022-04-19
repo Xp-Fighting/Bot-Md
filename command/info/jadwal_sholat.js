@@ -37,7 +37,7 @@ module.exports = {
                     await sock.sendMessage(msg.from, {
                         text: "Hasil pencarian kota",
                         buttonText: "hasil",
-                        footer: "Kaguya PublicBot • FaizBastomi",
+                        footer: "Znn Bot",
                         sections
                     }, { quoted: msg });
                 }
