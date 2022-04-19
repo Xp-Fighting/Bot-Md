@@ -44,15 +44,18 @@ module.exports = {
                 teks += `└───────⭓\n\n`
             }
             teks += `send ${prefix}help followed by a command name to get detail of command, e.g. ${prefix}help sticker`;
-            await msg.reply(teks)
-            /*await sock.sendMessage(msg.from, {
-                text: teks,
-                footer: "Created By Senkuu",
-                templateButtons: [
-                    { urlButton: { displayText: "Telegram Bot", url: "https://t.me/secondMidnight_bot" } },
-                    { urlButton: { displayText: "Source Code", url: "https://github.com/ZennIXZ/Bot-Wa" } }
-                ]
-            }, { quoted: msg })*/
+            // await msg.reply(teks)
+            const buttons = [
+                { buttonId: `.owner`, buttonText: { displayText: 'Owner' }, type: 1 }
+            ]
+            let buttonMessage = {
+                image: { url: 'https://telegra.ph/file/fa5ac44057450caf9c647.jpg' },
+                caption: teks,
+                footer: `Powered By Senkuu`,
+                buttons: buttons,
+                headerType: 4
+            }
+            sock.sendMessage(msg.from, buttonMessage, { quoted: msg })
         }
     }
 }
