@@ -37,7 +37,7 @@ module.exports = {
                 + `Hello, ${pushName === undefined ? sender.split("@")[0] : pushName}\n*Here My Command List*\n\n`;
             const keys = Object.keys(category);
             for (const key of keys) {
-                teks += `┌──⭓ *${key.toUpperCase()} Menu*\n`
+                teks += `┌──⭓ *${key.toUpperCase()} MENU*\n`
                 teks += `│\n`
                 teks += `${category[key].filter(v => v.type !== "private").map((cmd) => `│⭔ ${prefix + cmd.name}`).join("\n")}\n`
                 teks += `│\n`
