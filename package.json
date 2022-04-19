@@ -1,10 +1,10 @@
 {
-  "name": "wbot-md",
+  "name": "bot-md",
   "description":"A WhatsApp Bot built with Baileys",
   "version": "1.0.1-4",
   "main": "./lib/connect.js",
   "license": "MIT",
-  "author": "FaizBastomi",
+  "author": "Znn",
   "scripts": {
     "start": "node ."
   },
