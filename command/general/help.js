@@ -33,22 +33,26 @@ module.exports = {
                     category[info.category].push(info);
                 }
             }
-            let str = '\t'.repeat(13) + "\`\`\`Znn BOT\`\`\`\n\n"
+            let teks = "\`\`\`Znn BOT\`\`\`\n\n"
                 + `Hello, ${pushName === undefined ? sender.split("@")[0] : pushName}\n*Here My Command List*\n\n`;
             const keys = Object.keys(category);
             for (const key of keys) {
-                str += `*${key.toUpperCase()}*\n~> \`\`\`${category[key]
-                    .map((cmd) => cmd.name).join(', ')}\`\`\`\n\n`
+                teks += `┌──⭓ *${key.toUpperCase()} Menu*\n`
+                teks += `│\n`
+                teks += `${category[key].filter(v => v.type !== "private").map((cmd) => `│⭔ ${prefix + cmd.name}`).join("\n")}\n`
+                teks += `│\n`
+                teks += `└───────⭓\n\n`
             }
-            str += `send ${prefix}help followed by a command name to get detail of command, e.g. ${prefix}help sticker`;
-            await sock.sendMessage(msg.from, {
-                text: str,
+            teks += `send ${prefix}help followed by a command name to get detail of command, e.g. ${prefix}help sticker`;
+            await msg.reply(teks)
+            /*await sock.sendMessage(msg.from, {
+                text: teks,
                 footer: "Created By Senkuu",
                 templateButtons: [
                     { urlButton: { displayText: "Telegram Bot", url: "https://t.me/secondMidnight_bot" } },
                     { urlButton: { displayText: "Source Code", url: "https://github.com/ZennIXZ/Bot-Wa" } }
                 ]
-            }, { quoted: msg })
+            }, { quoted: msg })*/
         }
     }
 }
