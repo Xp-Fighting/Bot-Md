@@ -12,4 +12,5 @@ global.APIKeys = {
 }
 
 
+global.botName = 'Znn'
 global.owner = ['6281804680327']
