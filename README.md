@@ -1,8 +1,8 @@
 
 <p align="center">
-	<img src="https://avatars.githubusercontent.com/ZennIXZ" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
+	<img src="https://avatars.githubusercontent.com/Znnxyz" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
-<h1 align="center">ZennIXZ</h1>
+<h1 align="center">Znn</h1>
 
 ## For Windows / Rdp / Vps Users
 
@@ -31,7 +31,7 @@ npm run start
 ---------
 
 
- [![Senkuu](https://github.com/ZennIXZ.png?size=100)](https://github.com/ZennIXZ) | [![Dika Ardnt.](https://github.com/DikaArdnt.png?size=100)](https://github.com/DikaArdnt) | [![FaizBastomi](https://github.com/FaizBastomi.png?size=100)](https://github.com/FaizBastomi)
+ [![Senkuu](https://github.com/Znnxyz.png?size=100)](https://github.com/Znnxyz) | [![Dika Ardnt.](https://github.com/DikaArdnt.png?size=100)](https://github.com/DikaArdnt) | [![FaizBastomi](https://github.com/FaizBastomi.png?size=100)](https://github.com/FaizBastomi)
 ----|----|----
-[ZennIXZ](https://github.com/ZennIXZ) | [DikaArdnt](https://github.com/DikaArdnt) | [FaizBastomi](https://github.com/FaizBastomi)
+[ZennIXZ](https://github.com/Znnxyz) | [DikaArdnt](https://github.com/DikaArdnt) | [FaizBastomi](https://github.com/FaizBastomi)
  Pengopy | Thanks To | Creator
