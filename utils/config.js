@@ -3,10 +3,13 @@ const chalk = require('chalk')
 
 // Website Api
 global.APIs = {
-	zeks: 'https://api.zeks.xyz',
+	zeks: 'https://api.zeks.me',
 }
 
 // Apikey Website Api
 global.APIKeys = {
-	'https://api.zeks.xyz': 'BIKIN BANG',
+	'https://api.zeks.me': 'apivinz',
 }
+
+
+global.owner = ['6281804680327']
