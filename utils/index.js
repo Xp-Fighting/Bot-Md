@@ -10,11 +10,8 @@ const webp = require('webp-converter');
 const { downloadContentFromMessage, proto } = require("@adiwajshing/baileys");
 const { fromBuffer } = require('file-type');
 const { join } = require('path');
-const { openWeather } = require("../config.json");
 const { sizeFormatter } = require("human-readable");
 
-// Exports from other
-const wiki = require("./wiki");
 
 const color = (text, color) => {
   return !color ? clc.green(text) : clc.keyword(color)(text);
@@ -177,52 +174,9 @@ const UserAgent = () => {
   return res
 }
 
-const openWeatherAPI = async function (q, type) {
-  try {
-    let info;
-    let data;
-    switch (type) {
-      case "geo":
-        let geo = q.split("|")
-        info = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${geo[0]}&lon=${geo[1]}&appid=${openWeather}&units=metric&lang=id`)
-        data = {
-          status: 200,
-          desc: info.data.weather[0].description,
-          temp: info.data.main.temp + "°C",
-          feels: info.data.main.feels_like + "°C",
-          press: info.data.main.pressure + " hPa",
-          humi: info.data.main.humidity + "%",
-          visible: (info.data.visibility / 1000).toFixed(1) + " km",
-          wind: info.data.wind.speed + " m/s",
-          name: info.data.name,
-          id: info.data.id
-        }
-        break;
-      case "city":
-        info = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${q}&appid=${openWeather}&units=metric&lang=id`)
-        data = {
-          status: 200,
-          desc: info.data.weather[0].description,
-          temp: info.data.main.temp + "°C",
-          feels: info.data.main.feels_like + "°C",
-          press: info.data.main.pressure + " hPa",
-          humi: info.data.main.humidity + "%",
-          visible: (info.data.visibility / 1000).toFixed(1) + " km",
-          wind: info.data.wind.speed + " m/s",
-          name: info.data.name,
-          id: info.data.id
-        }
-        break;
-    }
-    return data
-  } catch (e) {
-    console.log(e)
-    return { msg: `${e}` }
-  }
-}
 
 module.exports = {
   color, getRandom, downloadMedia, fetchText, fetchJson,
   fetchBuffer, calculatePing, textParse, fixNumber,
-  formatSize, UserAgent, openWeatherAPI, wiki
+  formatSize, UserAgent
 };
