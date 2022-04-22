@@ -34,4 +34,4 @@ npm run start
  [![Senkuu](https://github.com/Znnxyz.png?size=100)](https://github.com/Znnxyz) | [![Dika Ardnt.](https://github.com/DikaArdnt.png?size=100)](https://github.com/DikaArdnt) | [![FaizBastomi](https://github.com/FaizBastomi.png?size=100)](https://github.com/FaizBastomi)
 ----|----|----
 [Znn](https://github.com/Znnxyz) | [DikaArdnt](https://github.com/DikaArdnt) | [FaizBastomi](https://github.com/FaizBastomi)
- Pengopy | Thanks To | Creator
+ Pengcopy | Thanks To | Creator
